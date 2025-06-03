@@ -12,8 +12,8 @@ class Solution {
         }
         for (int j = 0; j < nums.length; j++) {
             int rs = target - nums[j]; // giá trị cần tìm
-            if (map.containsKey(rs) && map.get(rs) != j) { // kiểm tra giá trị có trong map và khác vị trí hiện tại
-                                                           // không
+            // kiểm tra giá trị có trong map và khác vị trí hiện tại không
+            if (map.containsKey(rs) && map.get(rs) != j) {
                 return new int[] { j, map.get(rs) };
             }
         }
