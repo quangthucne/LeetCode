@@ -10,6 +10,9 @@ class Solution {
         for (int i = 0; i < nums.length; i++) {
             map.put(nums[i], i);
         }
+
+        System.gc();
+
         for (int j = 0; j < nums.length; j++) {
             int rs = target - nums[j]; // giá trị cần tìm
             // kiểm tra giá trị có trong map và khác vị trí hiện tại không
